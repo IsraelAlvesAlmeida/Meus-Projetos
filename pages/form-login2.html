@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      #form2 .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Define duas colunas de igual largura */
+        background-image: url(../img/brasil.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+      }
+
+      #form2 .content-left {
+        display: flex;
+        align-items: center;
+      }
+
+      #form2 .content-left .poema h1 {
+        font-size: 3rem;
+        margin: 30px 0;
+      }
+
+      #form2 .content-left .poema {
+        color: #fff;
+        margin-left: 150px;
+      }
+
+      #form2 .content-left .poema p {
+        margin-bottom: 8px;
+      }
+
+      #form2 .author {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      /************** FORMULARIO **************************/
+
+      #form2 .content-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #form2 .form-box {
+        background-color: #fff;
+        width: 60%;
+        padding: 30px;
+        border: 1px solid var(--amarelo);
+        backdrop-filter: blur(1px);
+        border: 1px solid rgba(35, 149, 6, 0.4);
+        border-radius: 10px;
+      }
+
+      #form2 .topo {
+        text-align: center;
+        width: 100%;
+        margin: 5px 0 20px 0;
+      }
+
+      #form2 .logo {
+        width: 40%;
+      }
+
+      #form2 .topo h2 {
+        color: var(--verde);
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      #form2 .topo p {
+        font-size: 12px;
+      }
+
+      #form2 .input-box {
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: relative;
+        margin-bottom: 15px;
+      }
+
+      #form2 .input-box input {
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid rgba(35, 149, 6, 0.4);
+        padding: 15px 40px;
+        color: var(--verde);
+      }
+
+      #form2 .input-box input::placeholder {
+        color: var(--verde);
+        font-weight: 11px;
+        font-size: 12px;
+        opacity: 0.6;
+      }
+
+      #form2 .input-box i {
+        position: absolute;
+        right: 15px;
+        color: var(--verde);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      #form2 .remember-forgot {
+        display: flex;
+        width: 100%;
+        font-size: 12px;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-bottom: 20px;
+      }
+
+      #form2 .remember-forgot label {
+        display: flex;
+        position: relative;
+      }
+
+      #form2 .remember-forgot input {
+        margin-right: 5px;
+        accent-color: none;
+      }
+
+      #form2 .remember-forgot a {
+        text-decoration: none;
+        color: var(--verde);
+        transition: 0.5s;
+        font-weight: 500;
+      }
+
+      #form2 .remember-forgot a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      #form2 .btn-login {
+        width: 100%;
+        height: 50px;
+        background: var(--verde);
+        color: var(--amarelo);
+        border-radius: 50px;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 20px 0;
+        text-align: center;
+        transition: 0.5s;
+      }
+
+      #form2 .btn-login:hover {
+        background: none;
+        border: 1px solid rgba(35, 149, 6, 0.4);
+        color: var(--verde);
+      }
+
+      #form2 .register {
+        text-align: center;
+        width: 100%;
+        color: var(--verde);
+        font-size: 13px;
+        margin: 20px 0;
+      }
+
+      #form2 .register a {
+        text-decoration: none;
+        color: var(--verde);
+        transition: 0.5s;
+        font-weight: 500;
+      }
+
+      #form2 .register a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="form2-login">
+      <div class="container">
+        <div class="content-left">
+          <div class="poema">
+            <h1>Brasil Baronil</h1>
+            <p>"Minha terra tem palmeiras,</p>
+            <p>Onde canta o sabiá</p>
+            <p>As aves, que aqui gorjeiam</p>
+            <p>Não gorjeiam como lá.</p>
+            <br />
+            <p>Nosso céu tem mais estrelas,</p>
+            <p>Nossas várzeas têm mais flores,</p>
+            <p>Nossos bosques têm mais vida,</p>
+            <p>Nossa vida mais amores.(...)"</p>
+            <br />
+            <p class="author">Gonçalves Dias</p>
+          </div>
+          <!-- poema -->
+        </div>
+        <!-- content-left -->
+
+        <div class="content-right">
+          <div class="form-box">
+            <form action="#">
+              <div class="topo">
+                <img src="img/logobrasil.png" class="logo" alt="Logo Brasil" />
+                <h2>Login</h2>
+                <p>Terra amada Brasil!</p>
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Senha" />
+              </div>
+              <div class="remember-forgot">
+                <label for="#"><input type="checkbox" />Lembrar senha</label>
+                <a href="#">Esqueci a senha</a>
+              </div>
+              <button type="submit" class="btn-login">Entrar</button>
+              <div class="register">
+                <span>Não tem conta?</span>
+                <a href="#">Criar Conta</a>
+              </div>
+            </form>
+          </div>
+          <!-- form-box -->
+        </div>
+        <!-- content-right -->
+      </div>
+      <!-- container -->
+    </section>
+  </body>
+</html>
